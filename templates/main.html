@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paste Text on Image</title>
+</head>
+<body>
+    <h1>Paste Text on Image</h1>
+    <form action="/paste_text_on_image" method="POST" enctype="multipart/form-data">
+        <label for="image">Select an image:</label>
+        <input type="file" name="image" accept="image/*" required>
+        <br>
+        <label for="text">Enter the top text to insert:</label>
+        <input type="text" name="text"  maxlength="25">
+        <br>
+        <label for="text2">Enter the bottom text to insert:</label>
+        <input type="text" name="text2" maxlength="25">
+        <br>
+        <input type="submit" value="Makey Time">
+    </form>
+</body>
+</html>
